@@ -1,6 +1,6 @@
 {
     "title": "Mastering Scrapy: A Comprehensive Web Scraping Tutorial",
-    "description": "Dive into the world of web scraping with Scrapy, the powerful Python framework. This interactive tutorial will guide you through the essentials, from setting up your environment to advanced techniques, ensuring you're well-equipped to harness the vast data of the web with ease.",
+    "description": "Dive into web scraping with Scrapy. This tutorial guides you from setup to advanced techniques, empowering you to harness web data with ease.",
     "items": [
         {
             "path": "scrapy_intro"

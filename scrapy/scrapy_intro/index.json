@@ -8,6 +8,9 @@
     "steps": [
       {
         "text": "installing_scrapy.md"
+      },
+      {
+        "text": "scrapy_shell.md"
       }
     ]
   },
