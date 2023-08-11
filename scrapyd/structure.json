@@ -1,9 +1,0 @@
-{
-    "title": "Install scrapyd and setup spiders",
-    "description": "Install scrapyd and setup spiders for scheduling",
-    "items": [
-        {
-            "path": "install_scrapyd"
-        }
-    ]
-}

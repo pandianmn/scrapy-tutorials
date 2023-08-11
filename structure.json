@@ -1,8 +1,8 @@
 {
     "items": [
         {
-            "path": "scrapyd",
-            "title": "Control scrapy spiders using a JSON API"
+            "path": "scrapy",
+            "title": "Learn about Scrapy"
         }
     ]
 }

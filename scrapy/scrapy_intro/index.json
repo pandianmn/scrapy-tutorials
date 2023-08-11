@@ -1,0 +1,17 @@
+{
+  "title": "Introduction to scrapy",
+  "description": "This is a simple tutorial to get you started with scrapy.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "text": "installing_scrapy.md"
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
