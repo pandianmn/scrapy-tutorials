@@ -2,6 +2,6 @@
     "title": "Install scrapyd and setup spiders",
     "description": "Install scrapyd and setup spiders for scheduling",
     "backend": {
-        "imageid": "aciobanu/scrapy"
+        "imageid": "ubuntu"
     }
 }
