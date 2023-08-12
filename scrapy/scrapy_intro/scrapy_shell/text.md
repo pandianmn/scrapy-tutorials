@@ -8,21 +8,23 @@ The Scrapy shell is an essential tool for every web scraper. This interactive en
 
 ### 1. Launching the Scrapy Shell
 Scrapy shell can be initiated with a target URL or a local HTML file. Here's how you can get started:
-
-<br><br>
+<br>
 `scrapy shell "http://quotes.toscrape.com/"`{{exec}}
 <br>
+
 For local HTML files, use:
-<br><br>
+<br>
 `scrapy shell ../other/path/to/file.html`
 <br>
+
 To terminate the shell session:
-<br><br>
+<br>
 `exit()`{{exec}}
+<br>
 
 ### 2. Using the Shell
 If your shell session has ended or you've yet to start, use the following command to begin:
-<br><br>
+<br>
 `scrapy shell "http://quotes.toscrape.com/"  --nolog`{{exec}}
 <br>
 Upon launching, the Scrapy shell will generate some objects automatically from the page you've loaded, such as the Response and Selector objects (for both HTML and XML content).
@@ -31,17 +33,17 @@ Upon launching, the Scrapy shell will generate some objects automatically from t
 
 #### 2.1 Extracting Data with CSS
 To retrieve the first quote using CSS:
-<br><br>
+<br>
 `response.css("span.text::text").extract_first()`{{exec}}
 <br>
 
 #### 2.2 Extracting Data with XPath
 To gather all the author names:
-<br><br>
+<br>
 `response.xpath('//div[@class="quote"]//small[@class="author"]/text()').getall()`{{exec}}
 <br>
 
-> **Note:** To extract only the first matched element, you can use `.get()` or its alias `.extract_first()` from earlier Scrapy versions. Likewise, `.extract()` functions as an alias for `.getall()`.
+> **Note:** To extract only the first matched element, you can use `get()` or its alias `extract_first()` from earlier Scrapy versions. Likewise, `extract()` functions as an alias for `getall()`.
 
 ## Conclusion
 By now, you should be comfortable launching the Scrapy shell and utilizing it to test and debug your XPath or CSS expressions. It serves as a powerful tool to hone your spiders and ensure accurate data extraction.
