@@ -1,0 +1,1 @@
+stat /root/tutorial/tutorial/spiders/
