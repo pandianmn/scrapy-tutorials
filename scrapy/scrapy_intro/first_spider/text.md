@@ -5,6 +5,10 @@ In Scrapy, the core components responsible for scraping content from web pages a
 ### Prerequisites
 - Scrapy installed on your environment.
 
+> Make sure you are in the editor for this excercise
+
+![Editor](./editor.png)
+
 ### Understanding Spiders
 Spiders are Python classes that dictate how Scrapy should scrape information from a website. These classes must:
 1. Inherit from the `Spider` class provided by Scrapy.
@@ -37,9 +41,11 @@ class QuotesSpider(scrapy.Spider):
         Path(filename).write_bytes(response.body)
         self.log(f"Saved file {filename}")
 ```
+> Please check the path and file name.
 
+![Editor](./spider_name.png)
 
-Understanding the Spider Components:
+### Understanding the Spider Components:
 - `name`: A unique identifier for the spider.
 - `start_requests()`: Generates the initial requests for the spider.
 - `parse()`: Handles the downloaded response for each request.
