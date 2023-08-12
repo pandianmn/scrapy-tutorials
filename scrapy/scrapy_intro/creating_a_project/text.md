@@ -42,4 +42,4 @@
 
 ## Conclusion
 
-You've now successfully created a new Scrapy project on Linux and examined its structure. You can proceed to create spiders and start your web scraping journey. Explore Scrapy's official documentation for advanced configurations and scraping techniques.
+You've now successfully created a new Scrapy project and examined its structure. You can proceed to create spiders and start your web scraping journey. Explore Scrapy's official documentation for advanced configurations and scraping techniques.
