@@ -1,5 +1,3 @@
-# Installing Scrapy
-
 You can install Scrapy and its dependencies from PyPI:
 <br>
 <br>

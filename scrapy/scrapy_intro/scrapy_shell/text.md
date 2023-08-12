@@ -1,5 +1,3 @@
-# Getting started with Scrapy shell
-
 The Scrapy shell is an interactive environment for testing and debugging your scraping code. Primarily used for testing XPath or CSS expressions, it provides real-time feedback on data extraction from web pages.
 
 As you familiarize yourself with the shell, it becomes an invaluable tool for refining and perfecting your spiders.

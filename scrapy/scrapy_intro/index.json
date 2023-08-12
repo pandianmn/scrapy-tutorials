@@ -7,10 +7,19 @@
     },
     "steps": [
       {
-        "text": "installing_scrapy.md"
+        "title": "1. Installing scrapy",
+        "text": "installing_scrapy/text.md",
+        "verify": "installing_scrapy/verify.sh"
       },
       {
-        "text": "scrapy_shell.md"
+        "title": "2. Getting started with Scrapy shell",
+        "text": "scrapy_shell/text.md"
+      },
+      {
+        "title": "3. Steps to Create a New Scrapy Project",
+        "text": "creating_a_projec/text.md",
+        "foreground": "finish/foreground.sh",
+        "background": "finish/background.sh"
       }
     ]
   },
