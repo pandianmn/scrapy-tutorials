@@ -17,9 +17,9 @@
       },
       {
         "title": "3. Steps to Create a New Scrapy Project",
-        "text": "creating_a_projec/text.md",
-        "foreground": "finish/foreground.sh",
-        "background": "finish/background.sh"
+        "text": "creating_a_project/text.md",
+        "foreground": "creating_a_project/foreground.sh",
+        "background": "creating_a_project/background.sh"
       }
     ]
   },
