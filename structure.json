@@ -1,7 +1,7 @@
 {
     "items": [
         {
-            "path": "Introduction to scrapy",
+            "path": "scrapy",
             "title": "This is a simple tutorial to get you started with scrapy."
         }
     ]
