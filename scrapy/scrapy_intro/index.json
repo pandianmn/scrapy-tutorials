@@ -19,11 +19,13 @@
         "title": "3. Steps to Create a New Scrapy Project",
         "text": "creating_a_project/text.md",
         "foreground": "creating_a_project/foreground.sh",
-        "background": "creating_a_project/background.sh"
+        "background": "creating_a_project/background.sh",
+        "verify": "creating_a_project/verify.sh"
       },
       {
         "title": "4. Creating Your First Scrapy Spider",
-        "text": "first_spider/text.md"
+        "text": "first_spider/text.md",
+        "verify": "first_spider/verify.sh"
       }
     ]
   },

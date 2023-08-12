@@ -18,7 +18,8 @@ Spiders are Python classes that dictate how Scrapy should scrape information fro
 
 Here's a basic spider designed to scrape quotes from the website `quotes.toscrape.com`. Save this spider in a file named `quotes_spider.py` inside a directory `tutorial/spiders` in your Scrapy project.
 
-`from pathlib import Path
+```
+from pathlib import Path
 import scrapy
 
 class QuotesSpider(scrapy.Spider):
@@ -36,7 +37,9 @@ class QuotesSpider(scrapy.Spider):
         page = response.url.split("/")[-2]
         filename = f"quotes-{page}.html"
         Path(filename).write_bytes(response.body)
-        self.log(f"Saved file {filename}")`
+        self.log(f"Saved file {filename}")
+```
+
 > Double-check the directory and filename when storing your spider (refer to the image below).<br>![Editor](./spider_name.png)
 
 ### Understanding the Spider Components:
