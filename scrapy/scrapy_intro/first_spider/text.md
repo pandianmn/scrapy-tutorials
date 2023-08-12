@@ -55,7 +55,7 @@ Navigate to the root directory of your Scrapy project in your terminal:
 `scrapy crawl quotes`{{exec}}
 <br>
 
-Upon execution, Scrapy will begin scraping the specified URLs. You'll see a series of logs in the console, and upon completion, two new files should appear in your directory: ```quotes-1.html``` and ```quotes-2.html```.
+Upon execution, Scrapy will begin scraping the specified URLs. You'll see a series of logs in the console, and upon completion, two new files should appear in your directory: `quotes-1.html` and `quotes-2.html`.
 
 ## Conclusion
 Congratulations! You've successfully created and executed your first Scrapy spider. If you are wondering why we haven’t parsed the HTML to extract specific data yet, hold on — we will cover that in the next tutorial.
