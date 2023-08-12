@@ -1,7 +1,7 @@
 The Scrapy shell is an essential tool for every web scraper. This interactive environment lets users test and debug their scraping code in real-time. This tutorial will guide you on how to launch and effectively use the Scrapy shell for testing XPath or CSS expressions and refining your spiders.
 
 ### Prerequisites
-- Installation of Scrapy on your system.
+- Installation of Scrapy on your environment.
 - Basic knowledge of XPath or CSS expressions.
 
 ## Step-by-Step Instructions

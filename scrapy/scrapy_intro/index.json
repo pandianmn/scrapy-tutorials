@@ -20,6 +20,10 @@
         "text": "creating_a_project/text.md",
         "foreground": "creating_a_project/foreground.sh",
         "background": "creating_a_project/background.sh"
+      },
+      {
+        "title": "4. Creating Your First Scrapy Spider",
+        "text": "first_spider/text.md"
       }
     ]
   },

@@ -10,7 +10,7 @@
    Create your new Scrapy project:
    <br>
    <br>
-   `scrapy startproject projectname`{{exec}}
+   `scrapy startproject tutorial`{{exec}}
 
 3. **Verify Project Directory Creation**
 
@@ -19,23 +19,23 @@
    <br>
    `ls`{{exec}}
 
-   You should now see a directory named `projectname`.
+   You should now see a directory named `tutorial`.
 
 4. **Inspect the Project Structure**
 
    To see the structure and files of the newly created Scrapy project, use the `tree` command:
    <br>
    <br>
-   `tree projectname`{{exec}}
+   `tree tutorial`{{exec}}
 
-   This command provides an overview of the entire directory structure and files inside the `projectname` directory.
+   This command provides an overview of the entire directory structure and files inside the `tutorial` directory.
 
 5. **View the Settings File**
 
    Scrapy provides a default `settings.py` file with several configurations. To view its content, use the `cat` command:
    <br>
    <br>
-   `cat projectname/projectname/settings.py`{{exec}}
+   `cat tutorial/tutorial/settings.py`{{exec}}
 
 
 > **Note:** Alternatively, you can use the provided IDE within the environment to view and edit the files in a more user-friendly manner.
