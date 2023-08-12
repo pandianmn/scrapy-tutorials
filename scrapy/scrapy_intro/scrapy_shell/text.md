@@ -43,7 +43,7 @@ To gather all the author names:
 `response.xpath('//div[@class="quote"]//small[@class="author"]/text()').getall()`{{exec}}
 <br>
 
-> **Note:** To extract only the first matched element, you can use `get()` or its alias `extract_first()` from earlier Scrapy versions. Likewise, `extract()` functions as an alias for `getall()`.
+> **Note:** To extract only the first matched element, you can use ```.get()``` or its alias ```.extract_first()``` from earlier Scrapy versions.<br>Likewise, ```.extract()``` functions as an alias for ```.getall()```.
 
 ## Conclusion
 By now, you should be comfortable launching the Scrapy shell and utilizing it to test and debug your XPath or CSS expressions. It serves as a powerful tool to hone your spiders and ensure accurate data extraction.

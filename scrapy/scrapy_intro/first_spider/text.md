@@ -5,9 +5,7 @@ In Scrapy, the core components responsible for scraping content from web pages a
 ### Prerequisites
 - Scrapy installed on your environment.
 
-> Make sure you are in the editor for this excercise
-
-![Editor](./editor.png)
+> Ensure you're positioned inside the editor for this activity (refer to the image below).<br>![Editor](./editor.png)
 
 ### Understanding Spiders
 Spiders are Python classes that dictate how Scrapy should scrape information from a website. These classes must:
@@ -20,8 +18,7 @@ Spiders are Python classes that dictate how Scrapy should scrape information fro
 
 Here's a basic spider designed to scrape quotes from the website `quotes.toscrape.com`. Save this spider in a file named `quotes_spider.py` inside a directory `tutorial/spiders` in your Scrapy project.
 
-```python
-from pathlib import Path
+`from pathlib import Path
 import scrapy
 
 class QuotesSpider(scrapy.Spider):
@@ -39,11 +36,8 @@ class QuotesSpider(scrapy.Spider):
         page = response.url.split("/")[-2]
         filename = f"quotes-{page}.html"
         Path(filename).write_bytes(response.body)
-        self.log(f"Saved file {filename}")
-```
-> Please check the path and file name.
-
-![Editor](./spider_name.png)
+        self.log(f"Saved file {filename}")`
+> Double-check the directory and filename when storing your spider (refer to the image below).<br>![Editor](./spider_name.png)
 
 ### Understanding the Spider Components:
 - `name`: A unique identifier for the spider.
@@ -53,12 +47,12 @@ class QuotesSpider(scrapy.Spider):
 The `parse()` method is particularly important as it not only extracts the data but can also discover new URLs to make additional requests.
 
 ## Executing Your Spider
-Navigate to the root directory of your Scrapy project in your terminal or command prompt and run:
+Navigate to the root directory of your Scrapy project in your terminal:
 <br>
 `scrapy crawl quotes`{{exec}}
 <br>
 
-Upon execution, Scrapy will begin scraping the specified URLs. You'll see a series of logs in the console, and upon completion, two new files should appear in your directory: quotes-1.html and quotes-2.html.
+Upon execution, Scrapy will begin scraping the specified URLs. You'll see a series of logs in the console, and upon completion, two new files should appear in your directory: ```quotes-1.html``` and ```quotes-2.html```.
 
 ## Conclusion
 Congratulations! You've successfully created and executed your first Scrapy spider. If you are wondering why we haven’t parsed the HTML to extract specific data yet, hold on — we will cover that in the next tutorial.
