@@ -50,7 +50,7 @@ class QuotesSpider(scrapy.Spider):
 The `parse()` method is particularly important as it not only extracts the data but can also discover new URLs to make additional requests.
 
 ## Executing Your Spider
->check your current path by using the `pwd` command:
+check your current path by using the `pwd` command:
 <br>
 `pwd`{{exec}}
 <br>
@@ -60,7 +60,7 @@ If the output from your shell doesn't display `/root/tutorial`, then you'll need
 `cd /root/tutorial`{{exec}}
 <br>
 
-Navigate to the root directory of your Scrapy project in your terminal:
+Once you have navigated to the root directory of your Scrapy project in your terminal, now execute:
 <br>
 `scrapy crawl quotes`{{exec}}
 <br>
