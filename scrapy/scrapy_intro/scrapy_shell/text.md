@@ -17,11 +17,6 @@ For local HTML files, use:
 `scrapy shell ../other/path/to/file.html`
 <br>
 
-To terminate the shell session:
-<br>
-`exit()`{{exec}}
-<br>
-
 ### 2. Using the Shell
 If your shell session has ended or you've yet to start, use the following command to begin:
 <br>
@@ -44,6 +39,11 @@ To gather all the author names:
 <br>
 
 > **Note:** To extract only the first matched element, you can use <code>.get()</code> or its alias <code>.extract_first()</code> from earlier Scrapy versions.<br>Likewise, <code>.extract()</code> functions as an alias for <code>.getall()</code>.
+
+To terminate the shell session:
+<br>
+`exit()`{{exec}}
+<br>
 
 ## Conclusion
 By now, you should be comfortable launching the Scrapy shell and utilizing it to test and debug your XPath or CSS expressions. It serves as a powerful tool to hone your spiders and ensure accurate data extraction.
