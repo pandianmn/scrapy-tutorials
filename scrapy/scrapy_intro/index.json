@@ -26,6 +26,10 @@
         "title": "4. Creating Your First Scrapy Spider",
         "text": "first_spider/text.md",
         "verify": "first_spider/verify.sh"
+      },
+      {
+        "title": "5. Deep Dive into Parsing with Scrapy",
+        "text": "parsing/text.md"
       }
     ]
   },
