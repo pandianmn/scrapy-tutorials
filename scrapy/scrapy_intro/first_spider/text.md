@@ -7,18 +7,19 @@ In Scrapy, the core components responsible for scraping content from web pages a
 
 > Ensure you're positioned inside the editor for this activity (refer to the image below).<br>![Editor](./editor.png)
 
-### Understanding Spiders
+### 1. Understanding Spiders
+
 Spiders are Python classes that dictate how Scrapy should scrape information from a website. These classes must:
 1. Inherit from the `Spider` class provided by Scrapy.
 2. Define initial requests to make.
 3. Specify how to follow links in the pages (if required).
 4. Parse the downloaded page content to extract data.
 
-### Writing Your First Spider
+### 2. Writing Your First Spider
 
 Here's a basic spider designed to scrape quotes from the website `quotes.toscrape.com`. Save this spider in a file named `quotes_spider.py` inside a directory `tutorial/spiders` in your Scrapy project.
 
-```
+```python
 from pathlib import Path
 import scrapy
 
@@ -40,16 +41,18 @@ class QuotesSpider(scrapy.Spider):
         self.log(f"Saved file {filename}")
 ```
 
-> Double-check the directory and filename when storing your spider (refer to the image below).<br>![Editor](./spider_name.png)
 
-### Understanding the Spider Components:
+Let's break down the main components of this spider:
+
 - `name`: A unique identifier for the spider.
 - `start_requests()`: Generates the initial requests for the spider.
 - `parse()`: Handles the downloaded response for each request.
 
 The `parse()` method is particularly important as it not only extracts the data but can also discover new URLs to make additional requests.
 
-## Executing Your Spider
+> Double-check the directory and filename when storing your spider (refer to the image below).<br>![Editor](./spider_name.png)
+
+### 3. Executing Your Spider
 check your current path by using the `pwd` command:
 <br>
 `pwd`{{exec}}
