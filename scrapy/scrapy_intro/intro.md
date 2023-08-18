@@ -16,8 +16,11 @@ Here's a brief overview of the topics we will cover:
 ## 4. **Creating Your First Scrapy Spider**
    - Building on the knowledge gained, we'll walk you through the creation of your first spider. By the end, you'll have written a spider capable of crawling a website and saving the scraped data.
 
+## 5. **Deep Dive into Parsing with Scrapy**
+   - Dive into Scrapy's parsing mechanics to understand how data extraction is streamlined. Grasp the essentials of CSS and XPath selectors, ensuring accurate and efficient content retrieval.
+
 Each tutorial is designed to be comprehensive yet concise, ensuring that you get the most out of your learning experience without feeling overwhelmed. Additionally, real-world examples and practical exercises will be sprinkled throughout to reinforce the concepts discussed.
 
-**Pre-requisites**: A basic understanding of Python will be helpful, but even if you're new to the language, you can still follow along.
+**Pre-requisites**: A basic understanding of Python is required. Additionally, knowledge of XPath or CSS selectors is essential for following this tutorial series.
 
 So, are you ready to embark on this web scraping journey with Scrapy? Let's dive right in!

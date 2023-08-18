@@ -31,7 +31,11 @@
         "title": "5. Deep Dive into Parsing with Scrapy",
         "text": "parsing/text.md"
       }
-    ]
+    ],
+    "finish": {
+      "title": "Finish",
+      "text": "finish/text.md"
+    }
   },
   "backend": {
     "imageid": "ubuntu"

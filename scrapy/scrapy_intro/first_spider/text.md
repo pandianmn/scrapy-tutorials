@@ -1,5 +1,3 @@
-## Creating Your First Scrapy Spider
-
 In Scrapy, the core components responsible for scraping content from web pages are known as **Spiders**. In this tutorial, we will walk you through the process of defining your very first spider to extract data from a website.
 
 ### Prerequisites
