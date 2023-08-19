@@ -1,0 +1,20 @@
+{
+    "title": "Handling Pagination and Detail Scraping with Scrapy",
+    "description": "In this scenario, we'll explore how to navigate through paginated content using Scrapy.",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "1. Understanding Pagination",
+                "text": "1_understanding_pagination/text.md",
+                "foreground": "1_understanding_pagination/foreground.sh",
+                "background": "1_understanding_pagination/background.sh"
+            }
+        ]
+    },
+    "backend": {
+        "imageid": "ubuntu"
+    }
+}

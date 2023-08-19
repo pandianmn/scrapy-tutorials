@@ -4,6 +4,9 @@
     "items": [
         {
             "path": "scrapy_intro"
+        },
+        {
+            "path": "pagination_and_into"
         }
     ]
 }
