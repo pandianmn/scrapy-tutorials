@@ -32,8 +32,6 @@ class QuotesSpider(scrapy.Spider):
 
 This approach ensures that the spider will navigate through all available pages on the website, extracting quotes until there are no more pages left.
 
-In the following sections, we'll delve deeper into combining pagination with detail scraping, ensuring a comprehensive data extraction process.
-
 ### Saving the Spider in Your Project:
 
 Before running the spider, ensure you save it in the appropriate location within your Scrapy project. Typically, spiders are saved in the `spiders` directory of your project.
@@ -43,6 +41,9 @@ Before running the spider, ensure you save it in the appropriate location within
 3. Copy and paste the spider code provided above into this file and save it.
 
 With the spider saved in the correct location, you can now run it using the Scrapy command-line tool.
+<br>
+`scrapy crawl quotes_button`{{exec}}
+<br>
 
 ### Conclusion:
 
