@@ -11,6 +11,10 @@
                 "text": "1_understanding_pagination/text.md",
                 "foreground": "1_understanding_pagination/foreground.sh",
                 "background": "1_understanding_pagination/background.sh"
+            },
+            {
+                "title": "2. Scraping Multiple Pages",
+                "text": "2_scraping_multiple_pages"
             }
         ]
     },
