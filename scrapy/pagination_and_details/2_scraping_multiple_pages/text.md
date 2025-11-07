@@ -6,10 +6,11 @@ Here's the code for a Scrapy spider that scrapes quotes from the website "http:/
 import scrapy
 
 class QuotesSpider(scrapy.Spider):
-    name = "quotes_page"
+    name = "quotes_button"
     start_urls = ["http://quotes.toscrape.com/"]
-    
+
     def parse(self, response):
+        # Extract quotes from the current page
         for quote in response.css('div.quote'):
             quote_dict = {
                 'text': quote.css('span.text::text').get(),
@@ -17,18 +18,18 @@ class QuotesSpider(scrapy.Spider):
                 'tags': quote.css('div.tags a.tag::text').getall()
             }
             yield quote_dict
-        
-        # Navigate to the next page
-        next_page = response.css("li.next a::attr(href)").extract_first()
+
+        # Navigate to the next page if it exists
+        next_page = response.css("li.next a::attr(href)").get()
         if next_page:
             yield response.follow(next_page, callback=self.parse)
 ```
 
 #### Understanding the Code:
 
-1. **Quote Extraction**: For each quote on the page, we extract the text, author, and tags using CSS selectors and store them in a dictionary named `quote_dict`.
+1. **Quote Extraction**: For each quote on the page, we extract the text, author, and tags using CSS selectors and store them in a dictionary named `quote_dict`. The `yield` statement returns each quote as it's found.
 
-2. **Handling Pagination**: After extracting all quotes from the current page, the spider checks for a link to the next page using the CSS selector `"li.next a::attr(href)"`. If a next page exists, the spider follows the link and continues the scraping process on the subsequent page.
+2. **Handling Pagination**: After extracting all quotes from the current page, the spider checks for a link to the next page using the CSS selector `"li.next a::attr(href)"`. The `get()` method (which replaces the deprecated `extract_first()`) retrieves the href attribute. If a next page exists, the spider follows the link and continues the scraping process by calling the same `parse` method on the subsequent page.
 
 This approach ensures that the spider will navigate through all available pages on the website, extracting quotes until there are no more pages left.
 
