@@ -2,12 +2,25 @@
 
 [![Scrapy](https://img.shields.io/badge/Scrapy-2.x-green.svg)](https://scrapy.org/)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
+[![Killercoda](https://img.shields.io/badge/Platform-Killercoda-orange.svg)](https://killercoda.com/)
 
-A comprehensive, hands-on tutorial series designed to teach web scraping with Scrapy, from basic concepts to advanced pagination techniques. These interactive tutorials guide you through real-world scenarios with practical examples and exercises.
+A comprehensive, hands-on tutorial series designed for **[Killercoda](https://killercoda.com/)** interactive learning platform. Learn web scraping with Scrapy through real-world scenarios with executable commands, automatic environment setup, and step-by-step validation.
 
 ## 📚 Overview
 
 This repository contains a complete learning path for mastering Scrapy, a powerful and versatile web scraping framework for Python. Whether you're a data enthusiast, developer, or researcher, these tutorials will equip you with the skills to extract valuable data from websites efficiently and ethically.
+
+### 🎮 Killercoda Interactive Platform
+
+These tutorials are specifically designed for the **Killercoda** interactive learning platform, featuring:
+
+- **One-Click Command Execution** - Commands with `{{exec}}` syntax run directly in your browser
+- **Automated Environment Setup** - Background scripts prepare your workspace automatically
+- **Built-in Validation** - Verification scripts check your progress at each step
+- **Integrated IDE** - Edit code and view files without leaving your browser
+- **Pre-configured Terminal** - Start coding immediately without local setup
+
+> **Note:** While designed for Killercoda, these tutorials can be adapted for local use by running the commands manually and following the markdown instructions.
 
 ## 🎯 What You'll Learn
 
@@ -39,7 +52,19 @@ Before starting these tutorials, you should have:
 
 ## 🚀 Getting Started
 
-### Installation
+### On Killercoda (Recommended)
+
+These tutorials are designed to run seamlessly on Killercoda:
+
+1. Navigate to the Killercoda platform
+2. Search for "Scrapy" or access the direct scenario links
+3. Click "Start Scenario" to begin
+4. Follow the interactive instructions with one-click command execution
+5. Environment setup happens automatically in the background
+
+### Local Installation (Alternative)
+
+If you prefer to run locally, install Scrapy:
 
 ```bash
 # Install Scrapy via pip
@@ -49,6 +74,8 @@ pip install scrapy
 scrapy version -v
 ```
 
+> **Note:** When running locally, execute commands from the tutorial without the `{{exec}}` syntax and manually run background scripts if needed.
+
 ### Project Structure
 
 ```
@@ -56,16 +83,32 @@ scrapy-tutorials/
 ├── scrapy/
 │   ├── scrapy_intro/              # Scenario 1: Introduction
 │   │   ├── installing_scrapy/
+│   │   │   ├── text.md           # Tutorial content
+│   │   │   └── verify.sh         # Validation script
 │   │   ├── scrapy_shell/
+│   │   │   └── text.md
 │   │   ├── creating_a_project/
+│   │   │   ├── text.md
+│   │   │   ├── background.sh     # Environment setup
+│   │   │   ├── foreground.sh     # User messages
+│   │   │   └── verify.sh
 │   │   ├── first_spider/
 │   │   ├── parsing/
-│   │   └── index.json
+│   │   ├── finish/
+│   │   ├── intro.md              # Scenario introduction
+│   │   └── index.json            # Killercoda scenario config
 │   └── pagination_and_details/    # Scenario 2: Pagination
 │       ├── 1_understanding_pagination/
+│       │   ├── text.md
+│       │   ├── background.sh
+│       │   └── foreground.sh
 │       ├── 2_scraping_multiple_pages/
+│       │   ├── text.md
+│       │   ├── background.sh
+│       │   └── foreground.sh
+│       ├── intro.md
 │       └── index.json
-├── structure.json
+├── structure.json                 # Course structure for Killercoda
 └── README.md
 ```
 
@@ -141,15 +184,27 @@ class QuotesSpider(scrapy.Spider):
             yield response.follow(next_page, callback=self.parse)
 ```
 
-## 📝 Running the Tutorials
+## 📝 Killercoda Tutorial Structure
 
-Each tutorial section includes:
-- **text.md** - Tutorial content and instructions
-- **background.sh** - Setup script for environment
-- **foreground.sh** - User-facing setup messages
-- **verify.sh** - Validation scripts (where applicable)
+### Tutorial Files
 
-To run a spider from the tutorials:
+Each tutorial step is organized with Killercoda-specific files:
+
+- **text.md** - Tutorial content with instructions and `{{exec}}` clickable commands
+- **background.sh** - Runs automatically to set up the environment (installs packages, creates directories)
+- **foreground.sh** - Displays setup messages to users while background tasks complete
+- **verify.sh** - Optional validation script to verify step completion
+- **index.json** - Scenario configuration that defines steps and scripts
+
+### Running Commands in Killercoda
+
+On Killercoda, commands appear with `{{exec}}` buttons that execute when clicked:
+
+```markdown
+`scrapy crawl quotes`{{exec}}
+```
+
+When running locally or adapting for other platforms, simply execute the commands without the `{{exec}}` syntax:
 
 ```bash
 # Navigate to your project directory
@@ -191,10 +246,16 @@ Contributions are welcome! If you find issues or have suggestions for improvemen
 
 ## 📚 Additional Resources
 
+### Scrapy Resources
 - [Official Scrapy Documentation](https://docs.scrapy.org/)
 - [Scrapy Tutorial](https://docs.scrapy.org/en/latest/intro/tutorial.html)
 - [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.asp)
 - [XPath Tutorial](https://www.w3schools.com/xml/xpath_intro.asp)
+
+### Killercoda Resources
+- [Killercoda Platform](https://killercoda.com/)
+- [Killercoda Scenario Creation Guide](https://killercoda.com/creators)
+- [Killercoda Documentation](https://killercoda.com/creators/get-started)
 
 ## ⚖️ Legal and Ethical Considerations
 
