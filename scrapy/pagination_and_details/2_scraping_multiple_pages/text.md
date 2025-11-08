@@ -42,6 +42,13 @@ Before running the spider, ensure you save it in the appropriate location within
 3. Copy and paste the spider code provided above into this file and save it.
 
 With the spider saved in the correct location, you can now run it using the Scrapy command-line tool.
+
+First, ensure your virtual environment is activated and navigate to your project directory:
+<br>
+`source ~/scrapy-env/bin/activate && cd /root/tutorial`{{exec}}
+<br>
+
+Now run the spider:
 <br>
 `scrapy crawl quotes_button`{{exec}}
 <br>

@@ -4,6 +4,11 @@ The Scrapy shell is an essential tool for every web scraper. This interactive en
 - Installation of Scrapy on your environment.
 - Basic knowledge of XPath or CSS expressions.
 
+First, ensure your virtual environment is activated:
+<br>
+`source ~/scrapy-env/bin/activate`{{exec}}
+<br>
+
 ### 1. Launching the Scrapy Shell
 Scrapy shell can be initiated with a target URL or a local HTML file. Here's how you can get started:
 <br>
