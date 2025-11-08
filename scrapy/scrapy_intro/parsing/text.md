@@ -40,7 +40,12 @@ Within the spider, the `parse` method plays a crucial role. Let's dissect its co
 
 ### 3. Running the Spider and Exporting Data
 
-To see the spider in action and save the scraped data, follow these steps:
+To see the spider in action and save the scraped data, follow these steps.
+
+First, ensure your virtual environment is activated and navigate to your project directory:
+<br>
+`source ~/scrapy-env/bin/activate && cd /root/tutorial`{{exec}}
+<br>
 
 - **Exporting to JSON**:
 <br>

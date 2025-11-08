@@ -12,11 +12,8 @@ In many web scraping tasks, the data you need isn't confined to a single page. W
 
 ### 2. **Scraping Multiple Pages**
    - Modifying your Scrapy spider to follow pagination links.
-   - Techniques to ensure you don't get caught in infinite pagination loops.
-
-### 3. **Combining Pagination and Detail Scraping**
-   - Strategies for efficiently navigating paginated lists.
-   - Ensuring data consistency and completeness.
+   - Implementing recursive pagination using `response.follow()`.
+   - Ensuring comprehensive data extraction across all pages.
 
 ## Pre-requisites:
 

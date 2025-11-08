@@ -1,3 +1,8 @@
+Before creating a Scrapy project, make sure your virtual environment is activated:
+<br>
+`source ~/scrapy-env/bin/activate`{{exec}}
+<br>
+
 1. **Check Current Directory Content**
 
    Use the `ls` command to list files and directories in the current location. This is to ensure no previous project exists with the name you're going to use.

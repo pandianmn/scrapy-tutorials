@@ -14,11 +14,16 @@
             },
             {
                 "title": "2. Scraping Multiple Pages",
-                "text": "2_scraping_multiple_pages/text.md"
+                "text": "2_scraping_multiple_pages/text.md",
+                "foreground": "2_scraping_multiple_pages/foreground.sh",
+                "background": "2_scraping_multiple_pages/background.sh"
             }
         ]
     },
     "backend": {
         "imageid": "ubuntu"
+    },
+    "interface": {
+        "layout": "ide"
     }
 }

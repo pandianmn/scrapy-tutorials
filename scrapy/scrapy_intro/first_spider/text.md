@@ -51,7 +51,12 @@ The `parse()` method is particularly important as it not only extracts the data 
 > Double-check the directory and filename when storing your spider (refer to the image below).<br>![Editor](./spider_name.png)
 
 ### 3. Executing Your Spider
-check your current path by using the `pwd` command:
+First, make sure your virtual environment is activated:
+<br>
+`source ~/scrapy-env/bin/activate`{{exec}}
+<br>
+
+Now check your current path by using the `pwd` command:
 <br>
 `pwd`{{exec}}
 <br>

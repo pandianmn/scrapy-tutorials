@@ -4,6 +4,11 @@ The Scrapy shell is an essential tool for every web scraper. This interactive en
 - Installation of Scrapy on your environment.
 - Basic knowledge of XPath or CSS expressions.
 
+First, ensure your virtual environment is activated:
+<br>
+`source ~/scrapy-env/bin/activate`{{exec}}
+<br>
+
 ### 1. Launching the Scrapy Shell
 Scrapy shell can be initiated with a target URL or a local HTML file. Here's how you can get started:
 <br>
@@ -27,7 +32,7 @@ Upon launching, the Scrapy shell will generate some objects automatically from t
 #### 2.1 Extracting Data with CSS
 To retrieve the first quote using CSS:
 <br>
-`response.css("span.text::text").extract_first()`{{exec}}
+`response.css("span.text::text").get()`{{exec}}
 <br>
 
 #### 2.2 Extracting Data with XPath
@@ -36,7 +41,7 @@ To gather all the author names:
 `response.xpath('//div[@class="quote"]//small[@class="author"]/text()').getall()`{{exec}}
 <br>
 
-> **Note:** To extract only the first matched element, you can use <code>.get()</code> or its alias <code>.extract_first()</code> from earlier Scrapy versions.<br>Likewise, <code>.extract()</code> functions as an alias for <code>.getall()</code>.
+> **Note:** To extract only the first matched element, use <code>.get()</code> (the modern method) instead of the deprecated <code>.extract_first()</code>.<br>Similarly, use <code>.getall()</code> instead of the deprecated <code>.extract()</code> to get all matched elements.
 
 To terminate the shell session:
 <br>
