@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Activate virtual environment
+source ~/scrapy-env/bin/activate
+
 # Ensure Scrapy project structure exists
 if [ ! -d "/root/tutorial" ]; then
     cd /root
