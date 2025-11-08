@@ -1,5 +1,7 @@
 To begin web scraping with Scrapy, it's essential to install the tool and its associated dependencies. Following Python best practices, we'll use a virtual environment to keep our dependencies isolated.
 
+> **Important:** Wait for the message "Ready to create virtual environment!" to appear below before proceeding. The system is installing required packages in the background.
+
 ### 1. Create a Virtual Environment
 First, create a virtual environment for our Scrapy project:
 <br><br>
