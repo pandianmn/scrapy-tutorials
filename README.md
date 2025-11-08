@@ -64,9 +64,17 @@ These tutorials are designed to run seamlessly on Killercoda:
 
 ### Local Installation (Alternative)
 
-If you prefer to run locally, install Scrapy:
+If you prefer to run locally, we recommend using a virtual environment:
 
 ```bash
+# Create a virtual environment
+python3 -m venv scrapy-env
+
+# Activate the virtual environment
+source scrapy-env/bin/activate  # On Linux/Mac
+# OR
+scrapy-env\Scripts\activate     # On Windows
+
 # Install Scrapy via pip
 pip install scrapy
 
@@ -74,7 +82,14 @@ pip install scrapy
 scrapy version -v
 ```
 
-> **Note:** When running locally, execute commands from the tutorial without the `{{exec}}` syntax and manually run background scripts if needed.
+**For Ubuntu/Debian systems with externally-managed Python:**
+
+If you encounter an "externally-managed-environment" error, you have two options:
+
+1. **Recommended:** Use a virtual environment (as shown above)
+2. **Quick fix for testing:** Use `pip install scrapy --break-system-packages`
+
+> **Note:** When running locally, execute commands from the tutorial without the `{{exec}}` syntax and manually run background scripts if needed. The `--break-system-packages` flag is safe in Killercoda's containerized environment but should be avoided on your personal system—use virtual environments instead.
 
 ### Project Structure
 
