@@ -2,8 +2,7 @@ In Scrapy, the core components responsible for scraping content from web pages a
 
 ### Prerequisites
 - Scrapy installed on your environment.
-
-> Ensure you're positioned inside the editor for this activity (refer to the image below).<br>![Editor](./editor.png)
+- Virtual environment activated (you should see `(scrapy-env)` in your terminal prompt).
 
 ### 1. Understanding Spiders
 
@@ -48,7 +47,7 @@ Let's break down the main components of this spider:
 
 The `parse()` method is particularly important as it not only extracts the data but can also discover new URLs to make additional requests.
 
-> Double-check the directory and filename when storing your spider (refer to the image below).<br>![Editor](./spider_name.png)
+> **Important:** Save your spider file as `quotes_spider.py` inside the `tutorial/tutorial/spiders/` directory. You can create and edit this file using the IDE on the right.
 
 ### 3. Executing Your Spider
 First, make sure your virtual environment is activated:

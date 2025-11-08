@@ -1,12 +1,9 @@
 {
     "title": "Mastering Scrapy: A Comprehensive Web Scraping Tutorial",
-    "description": "Dive into web scraping with Scrapy. This tutorial guides you from setup to advanced techniques, empowering you to harness web data with ease.",
+    "description": "Dive into web scraping with Scrapy. This tutorial guides you from setup to advanced techniques including pagination, empowering you to harness web data with ease.",
     "items": [
         {
             "path": "scrapy_intro"
-        },
-        {
-            "path": "pagination_and_details"
         }
     ]
 }
