@@ -9,6 +9,8 @@
       {
         "title": "1. Installing scrapy",
         "text": "installing_scrapy/text.md",
+        "foreground": "installing_scrapy/foreground.sh",
+        "background": "installing_scrapy/background.sh",
         "verify": "installing_scrapy/verify.sh"
       },
       {
