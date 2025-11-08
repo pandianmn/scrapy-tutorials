@@ -32,6 +32,18 @@
       {
         "title": "5. Deep Dive into Parsing with Scrapy",
         "text": "parsing/text.md"
+      },
+      {
+        "title": "6. Understanding Pagination",
+        "text": "../pagination_and_details/1_understanding_pagination/text.md",
+        "foreground": "../pagination_and_details/1_understanding_pagination/foreground.sh",
+        "background": "../pagination_and_details/1_understanding_pagination/background.sh"
+      },
+      {
+        "title": "7. Scraping Multiple Pages",
+        "text": "../pagination_and_details/2_scraping_multiple_pages/text.md",
+        "foreground": "../pagination_and_details/2_scraping_multiple_pages/foreground.sh",
+        "background": "../pagination_and_details/2_scraping_multiple_pages/background.sh"
       }
     ],
     "finish": {

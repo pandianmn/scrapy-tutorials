@@ -28,22 +28,25 @@ Before creating a Scrapy project, make sure your virtual environment is activate
 
 4. **Inspect the Project Structure**
 
-   To see the structure and files of the newly created Scrapy project, use the `tree` command:
+   You can explore the project structure in two ways:
+
+   - **Using the IDE**: Look at the file browser in the IDE on the right. Navigate to the `tutorial` folder to see all files and directories.
+   - **Using the terminal**: Run the `tree` command to see a text-based overview:
+
    <br>
    `tree tutorial`{{exec}}
    <br>
 
-   This command provides an overview of the entire directory structure and files inside the `tutorial` directory.
-
 5. **View the Settings File**
 
-   Scrapy provides a default `settings.py` file with several configurations. To view its content, use the `cat` command:
+   Scrapy provides a default `settings.py` file with several configurations. You can view it in two ways:
+
+   - **Using the IDE**: Open `tutorial/tutorial/settings.py` in the IDE file browser to view and edit it.
+   - **Using the terminal**: Use the `cat` command to display its content:
+
    <br>
    `cat tutorial/tutorial/settings.py`{{exec}}
    <br>
-
-
-> **Note:** Alternatively, you can use the provided IDE within the environment to view and edit the files in a more user-friendly manner.
 
 ## Conclusion
 

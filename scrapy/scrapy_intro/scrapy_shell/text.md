@@ -4,30 +4,25 @@ The Scrapy shell is an essential tool for every web scraper. This interactive en
 - Installation of Scrapy on your environment.
 - Basic knowledge of XPath or CSS expressions.
 
-First, ensure your virtual environment is activated:
+Ensure your virtual environment is activated. If you see `(scrapy-env)` in your terminal prompt, you're already set! Otherwise, activate it:
 <br>
 `source ~/scrapy-env/bin/activate`{{exec}}
 <br>
 
 ### 1. Launching the Scrapy Shell
-Scrapy shell can be initiated with a target URL or a local HTML file. Here's how you can get started:
+Scrapy shell can be initiated with a target URL. Let's start by loading a website:
 <br>
 `scrapy shell "http://quotes.toscrape.com/"`{{exec}}
 <br>
 
-For local HTML files, use:
-<br>
-`scrapy shell ../other/path/to/file.html`
-<br>
+> **Tip:** You can also use the Scrapy shell with local HTML files if you have them saved on your system. This is useful for testing scrapers on downloaded pages without making repeated network requests. Simply provide the file path: `scrapy shell /path/to/your/file.html`
+
+Wait for the shell to load. You'll see a `>>>` prompt when ready.
 
 ### 2. Using the Shell
-If your shell session has ended or you've yet to start, use the following command to begin:
-<br>
-`scrapy shell "http://quotes.toscrape.com/"  --nolog`{{exec}}
-<br>
-Upon launching, the Scrapy shell will generate some objects automatically from the page you've loaded, such as the Response and Selector objects (for both HTML and XML content).
+The Scrapy shell has now generated some objects automatically from the page you've loaded, such as the Response and Selector objects (for both HTML and XML content). These objects allow you to extract and manipulate data from the webpage.
 
-> **Tip:** You can view the HTML content in your shell with `response.body`{{exec}}
+> **Tip:** You can view the HTML content in your shell by typing `response.body` in the shell prompt.
 
 #### 2.1 Extracting Data with CSS
 To retrieve the first quote using CSS:

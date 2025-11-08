@@ -19,6 +19,12 @@ Here's a brief overview of the topics we will cover:
 ## 5. **Deep Dive into Parsing with Scrapy**
    - Dive into Scrapy's parsing mechanics to understand how data extraction is streamlined. Grasp the essentials of CSS and XPath selectors, ensuring accurate and efficient content retrieval.
 
+## 6. **Understanding Pagination**
+   - Learn what pagination is, why websites use it, and the challenges it poses for web scraping.
+
+## 7. **Scraping Multiple Pages**
+   - Master the art of navigating paginated content by implementing recursive pagination with `response.follow()`, ensuring comprehensive data extraction across all pages.
+
 Each tutorial is designed to be comprehensive yet concise, ensuring that you get the most out of your learning experience without feeling overwhelmed. Additionally, real-world examples and practical exercises will be sprinkled throughout to reinforce the concepts discussed.
 
 **Pre-requisites**: A basic understanding of Python is required. Additionally, knowledge of XPath or CSS selectors is essential for following this tutorial series.
